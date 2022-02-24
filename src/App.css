@@ -3,6 +3,10 @@
   font-family: 'Roboto Slab', serif;
 }
 
+body {
+  background-color: #181818;
+}
+
 .navbar {
   padding: 0 5px;
 }
