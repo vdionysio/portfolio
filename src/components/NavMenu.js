@@ -1,15 +1,26 @@
 import React from 'react';
-import logo from '../logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar } from 'react-bootstrap';
 import { scroller } from 'react-scroll';
+import { BsCodeSlash } from 'react-icons/bs';
 
 export default function NavMenu() {
   return (
-    <Navbar bg="myRed" variant="dark" fixed="top" expand="sm" collapseOnSelect={true}>
-      <Navbar.Brand>
-        <img src={logo} width="40px" height="40px" />
-        Logo
+    <Navbar
+      className="navbar font-400"
+      bg="myRed"
+      variant="dark"
+      fixed="top"
+      expand="sm"
+      collapseOnSelect={true}>
+      <Navbar.Brand
+        className="nav-brand"
+        href="#"
+        onClick={() =>
+          scroller.scrollTo('main-header', { smooth: true, offset: -70, duration: 500 })
+        }>
+        <BsCodeSlash />
+        Vinícius Dionysio
       </Navbar.Brand>
 
       <Navbar.Toggle />
@@ -17,6 +28,7 @@ export default function NavMenu() {
         <Nav>
           <Nav.Link
             href="#"
+            className="nav-links"
             onClick={() =>
               scroller.scrollTo('about', { smooth: true, offset: -70, duration: 500 })
             }>
@@ -24,6 +36,7 @@ export default function NavMenu() {
           </Nav.Link>
           <Nav.Link
             href="#"
+            className="nav-links"
             onClick={() =>
               scroller.scrollTo('skills', { smooth: true, offset: -70, duration: 500 })
             }>
@@ -31,6 +44,7 @@ export default function NavMenu() {
           </Nav.Link>
           <Nav.Link
             href="#"
+            className="nav-links"
             onClick={() =>
               scroller.scrollTo('works', { smooth: true, offset: -70, duration: 500 })
             }>
