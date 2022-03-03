@@ -14,7 +14,7 @@ export default function ContactLinks() {
       </div>
       <div className="curriculo-container">
         <a
-          href="https://drive.google.com/file/d/1EBTThXSCniOg_o1tgWOarKsQSh5miRop/view?usp=sharing"
+          href="https://drive.google.com/file/d/1jFfNAJzCiJzMEcilXDC2-SYNdDwYdDTv/view?usp=sharing"
           target="_blank"
           rel="noreferrer">
           Curriculo <BsFilePdfFill />
