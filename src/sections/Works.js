@@ -1,6 +1,8 @@
 import React from 'react';
 import WorkCard from '../components/WorkCard';
 import todoPrint from '../images/todo-print.png';
+import wallet from '../images/Wallet.png';
+import recipesApi from '../images/recipesApi.png';
 
 const worksObject = [
   {
@@ -9,14 +11,14 @@ const worksObject = [
     image: todoPrint
   },
   {
-    name: 'To Do List',
-    link: 'https://todo-dionysio-client.herokuapp.com/',
-    image: todoPrint
+    name: 'Recipes API',
+    link: 'https://github.com/vdionysio/recipes-api',
+    image: recipesApi
   },
   {
-    name: 'To Do List',
-    link: 'https://todo-dionysio-client.herokuapp.com/',
-    image: todoPrint
+    name: 'Wallet',
+    link: 'https://front-end-wallet.vercel.app/',
+    image: wallet
   }
 ];
 
